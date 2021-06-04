@@ -1,0 +1,15 @@
+.form-label {
+  font-size: 12px;
+}
+
+input[type='text']:read-only {
+  background-color: white;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}

@@ -1,26 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Container from 'react-bootstrap/Container';
+import Alert from 'react-bootstrap/Alert';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import CarList from './components/CarList';
+
+document.title = 'Fuel Cost Estimator';
+
+const App = () => (
+  <Container className="p-3">
+    <Alert show variant="secondary">
+      <Alert.Heading className="text-center">Fuel Cost Estimator</Alert.Heading>
+    </Alert>
+    <CarList />
+  </Container>
+);
 
 export default App;
