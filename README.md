@@ -8,7 +8,7 @@ Alustana koodatessa toimii Windows 10 ja editorina VSCode.
 
 ## Kuvaus ratkaisusta
 
-Ratkaisussa bensankulutuksen kasvaminen lasketaan funktiolla $f(x) = 1.009^{x-1} * l$, missä $x$ on haluttu ajonopeus ja $l$ on bensakulutus $1$km/h ajonopeudella. Tästä on helppo laskea kokonaiskulutukset eri matkanpituuksille.
+Ratkaisussa bensankulutuksen kasvaminen lasketaan funktiolla `f(x) = 1.009^(x-1) * l`, missä `x` on haluttu ajonopeus ja `l` on bensakulutus `1km/h` ajonopeudella. Tästä on helppo laskea kokonaiskulutukset, yms. eri matkanpituuksille.
 
 ## Ohjeet
 
