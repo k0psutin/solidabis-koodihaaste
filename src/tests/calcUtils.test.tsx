@@ -10,7 +10,7 @@ import {
 describe('calcUtils tests', () => {
   test('Minutes are formatted right', () => {
     const time = formatMinutes(200);
-    expect(time).toBe('3h 20min ');
+    expect(time).toBe('3h 20min');
   });
 
   test('Consumption is correct when base is 3l 1km/h @ 10km/h speed', () => {
@@ -40,7 +40,7 @@ describe('calcUtils tests', () => {
   test('calcTimeDifference returns the correct time', () => {
     const difference = calcTimeDifference(432, 114, 100);
 
-    expect(difference).toBe('-31min 49s');
+    expect(difference).toBe('-31min 50s');
   });
 
   test('calcConsumptionDifference returns the correct difference', () => {
