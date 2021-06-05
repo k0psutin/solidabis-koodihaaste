@@ -82,7 +82,7 @@ export const calcTimeDifference = (distance: number, speedA: number, speedB: num
 
   const travelTimeA = travelTime(distance, speedA);
   const travelTimeB = travelTime(distance, speedB);
-  const timeDifference = (travelTimeA - travelTimeB);
+  const timeDifference = Math.abs(travelTimeA - travelTimeB);
 
-  return `-${formatMinutes(Math.abs(timeDifference))}`;
+  return `-${formatMinutes(timeDifference)}`;
 };
