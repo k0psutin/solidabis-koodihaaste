@@ -1,6 +1,6 @@
-![app.png](app.png)
-
 # Solidabis koodihaaste
+
+![app.png](app.png)
 
 Ratkaisu on luotu React/Typescript:llä ja koodin tyylikkyydestä huolehtii Airbnb:n ESLint-säännöt.
 
