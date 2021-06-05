@@ -4,7 +4,7 @@ import Alert from 'react-bootstrap/Alert';
 
 import CarList from './components/CarList';
 
-document.title = 'Fuel Cost Estimator';
+document.title = 'Fuel Consumption Calculator';
 
 const App = () => (
   <Container className="p-3">
