@@ -62,6 +62,10 @@ export const calcConsumptionDifference = (
     return '';
   }
 
+  if (speedA === speedB) {
+    return '0';
+  }
+
   const consA = ((calcConsumption(consumption, speedA) / 100) * distance);
   const consB = ((calcConsumption(consumption, speedB) / 100) * distance);
   return `+${Math.abs(consA - consB).toFixed(2)}`;
@@ -70,6 +74,10 @@ export const calcConsumptionDifference = (
 export const calcTimeDifference = (distance: number, speedA: number, speedB: number) => {
   if (parseValue(distance) || parseValue(speedA) || parseValue(speedB)) {
     return '';
+  }
+
+  if (speedA === speedB) {
+    return '0';
   }
 
   const travelTimeA = travelTime(distance, speedA);
