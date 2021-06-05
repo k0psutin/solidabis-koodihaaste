@@ -9,7 +9,7 @@ document.title = 'Fuel Consumption Calculator';
 const App = () => (
   <Container className="p-3">
     <Alert show variant="secondary">
-      <Alert.Heading className="text-center">Fuel Cost Estimator</Alert.Heading>
+      <Alert.Heading className="text-center">Fuel Consumption Calculator</Alert.Heading>
     </Alert>
     <CarList />
   </Container>
