@@ -14,13 +14,21 @@ export const formatMinutes = (minutes: number): string => {
   const hours = Math.floor(minutes / 60);
   const minuteModulo = minutes % 60;
   const min = Math.floor(minuteModulo);
-  const seconds = Math.floor((minuteModulo - Math.floor(min)) * 60);
+  const seconds = Math.round((minuteModulo - min) * 60);
 
-  const hourString = (hours !== 0) ? `${hours}h ` : '';
-  const minuteString = (min !== 0) ? `${min}min ` : '';
-  const secondString = (seconds !== 0) ? `${seconds}s` : '';
+  const timeString: string[] = [];
 
-  return hourString + minuteString + secondString;
+  if (hours !== 0) {
+    timeString.push(`${hours}h`);
+  }
+  if (min !== 0) {
+    timeString.push(`${min}min`);
+  }
+  if (seconds !== 0) {
+    timeString.push(`${seconds}s`);
+  }
+
+  return timeString.join(' ');
 };
 
 export const formatTravelTime = (distance: number, speed: number): string => {
