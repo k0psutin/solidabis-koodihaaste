@@ -1,8 +1,6 @@
 # Solidabis koodihaaste
 
-![app.png](app.png)
-
-Ratkaisu on luotu React/Typescript:llä ja koodin tyylikkyydestä huolehtii Airbnb:n ESLint-säännöt.
+Ratkaisu on luotu React/Typescript:llä ja linttauksesta huolehtii Airbnb:n ESLint-säännöt.
 
 Alustana koodatessa toimii Windows 10 ja editorina VSCode.
 
